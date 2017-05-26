@@ -40,13 +40,85 @@
             <div class="panel-body">
               <form>
                 <div class="form-group">
-                  <label class="control-label">What third-party delivery platforms are you keen to consider? (e.g. DoorDash)</label>
+                  <label class="control-label">What third-party delivery platforms are you keen to consider? (e.g. DoorDash, UberEATS, etc.)</label>
                   <input class="form-control" data-role="tagsinput">
                 </div>
                 <div class="alert alert-warning">
                   <div class="text-justify">
+                    <div class="font-bold">
+                      Problem
+                    </div>
                     User data from delivery platforms cannot be captured for self-interests since these platforms do not provide user data to individuals.
                   </div>
+                </div>
+                <div class="alert alert-success">
+                  <div class="text-justify">
+                    <div class="font-bold">
+                      Solution
+                    </div>
+                    Only authenticated users (at juiceton.com/signup) will be able to use third-party delivery platforms.
+                  </div>
+                </div>
+
+                <hr/>
+
+                <div class="form-group">
+                  <label class="control-label">
+                    What sort of user data would you like to acquire? (e.g. Email, Phone).
+                    <div>
+                      Kindly provide a complete list.
+                    </div>
+                  </label>
+                  <div class="alert alert-info">
+                    <div class="text-justify">
+                      <div class="font-bold">
+                        Note
+                      </div>
+                      <p>
+                        User data that cannot be captured:
+                      </p>
+                      <ul>
+                        <li>
+                          <p>
+                            <span class="font-bold">All information pertaining to third-party delivery platforms.</span> <em>(These include data about users' orders, order tracking, etc. on these platforms since they do not provide informational details to individuals.)</em>
+                          </p>
+                          <p>
+                            This can however be retrieved directly via delivery platforms.
+                          </p>
+                        </li>
+                        <li>
+                          <span class="font-bold">Image data from the user.</span> <em>(Although this is possible but not lucarative, since storing image data onto the server requires a lot of storage memory which simply adds to the cost. <span class="font-bold">User textual data will suffice for your brand recognition</span>.)</em>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <input class="form-control" data-role="tagsinput">
+                </div>
+
+                <hr/>
+
+                <div class="form-group">
+                  <label class="control-label">
+                    What payment gateways are you considering in case of long-distance shipments?
+                  </label>
+
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Cash on Delivery</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">PayPal (<span class="text-success"><i class="fa fa-fw fa-money"></i> <i class="fa fa-fw fa-money"></i> <i class="fa fa-fw fa-money"></i> <i class="fa fa-fw fa-money"></i></span> <i class="fa fa-fw fa-money"></i>)</label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">
+                    Any other payment gateways to consider?
+                  </label>
+                  <div>
+                    <em class="text-danger">Additional charges for each payment gateway integration</em>
+                  </div>
+
+                  <input class="form-control" data-role="tagsinput">
                 </div>
               </form>
             </div>
@@ -66,5 +138,7 @@
       crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+    <script
+      src="https://use.fontawesome.com/e6af1cd139.js"></script>
   </body>
 </html>
