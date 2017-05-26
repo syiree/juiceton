@@ -10,30 +10,61 @@
       crossorigin="anonymous">
     <link
        rel="stylesheet"
-       href="https://fonts.googleapis.com/css?family=Roboto:300,700">
+       href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css">
     <style>
       body { font-family: "Roboto", Georgia, sans-serif; }
+      .font-light { font-weight: 300; }
       .jumbotron { background-color: #1D181F; color: #FFFFFF; }
       .font-bold { font-weight: 700; }
+      .bootstrap-tagsinput { width: 100%; }
     </style>
   </head>
   <body>
-      <div class="jumbotron">
-        <div class="container">
-          <img class="img-responsive center-block"
-            src="{{ site.baseurl }}/assets/img/brand-logo.png">
-          <div class="font-bold">
+    <div class="jumbotron">
+      <div class="container">
+        <img class="img-responsive center-block"
+          src="{{ site.baseurl }}/assets/img/brand-logo.png" width="200px">
+        <h3 class="text-center text-uppercase font-light">
+          Kickoff Meeting Questionnaire
+        </h3>
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <form>
+                <div class="form-group">
+                  <label class="control-label">What third-party delivery platforms are you keen to consider? (e.g. DoorDash)</label>
+                  <input class="form-control" data-role="tagsinput">
+                </div>
+                <div class="alert alert-warning">
+                  <div class="text-justify">
+                    User data from delivery platforms cannot be captured for self-interests since these platforms do not provide user data to individuals.
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"></script>
     <script
-      src="https://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-      crossorigin="anonymous"></script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
   </body>
 </html>
